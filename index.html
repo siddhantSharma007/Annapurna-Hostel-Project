@@ -9,20 +9,28 @@
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light" id="nav1">
+<nav class="navbar navbar-expand-lg navbar-light" id="nav1" style="color: white;">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="./Images/logo.png" alt="Annapurna" style="width: 100px;"></a>
-    <button class="navbar-toggler"style=" background-color: white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" style=" background-color: white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span  class="navbar-toggler-icon" ></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="./index.html" style="color: white;">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services" style="color: white;">Services</a>
-        </li>
+     
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./login-user.php">Student</a></li>
+              <li><a class="dropdown-item" href="./login-user.php">Admin</a></li>
+            </ul>
+          </li>
+    
         <li class="nav-item">
             <a class="nav-link" href="#Menu" style="color: white;">Menu</a>
           </li>
