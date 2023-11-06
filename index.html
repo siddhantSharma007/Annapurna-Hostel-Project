@@ -1,205 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Annapurna Hostel</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light" id="nav1" style="color: white;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="./Images/logo.png" alt="Annapurna" style="width: 100px;"></a>
-    <button class="navbar-toggler" style=" background-color: white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span  class="navbar-toggler-icon" ></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.html" style="color: white;">Home</a>
-        </li>
-     
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-              Services
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./login-user.php">Student</a></li>
-              <li><a class="dropdown-item" href="./login-user.php">Admin</a></li>
-            </ul>
-          </li>
-    
-        <li class="nav-item">
-            <a class="nav-link" href="#Menu" style="color: white;">Menu</a>
-          </li>
-        <li class="nav-item">
-            <a class="nav-link" href="./owner.html" style="color: white;">Owner Desk</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Contact.html" style="color: white;">Contact us</a>
-          </li>
+<body class="">
+    <nav class="text-center">
+        <!-- Desktop Menu -->
+        <ul class="hidden sm:flex list-none space-x-16 text-white justify-center bg-black font-serif text-lg cursor-pointer">
+            <li class="hover:text-red-400">Home</li>
+            <li class="hover:text-red-400">About</li>
+            <li class="hover:text-red-400">Gallery</li>
+            <li class="hover:text-red-400">Contact us</li>
+        </ul>
 
-      </ul>
-      
+        <!-- Mobile Menu (Initially Hidden) -->
+        <div class="flex sm:hidden justify-center ml-[55%]">
+            <div class="relative group">
+                <button class=""><img src="./images/menu.png" class="h-7"></button>
+                <ul class="hidden space-y-1 absolute left-0 mt-2 bg-black text-white p-2 w-40 text-center group-hover:block">
+                    <li class="hover:text-red-400">Home</li>
+                    <li class="hover:text-red-400">About</li>
+                    <li class="hover:text-red-400">Gallery</li>
+                    <li class="hover:text-red-400">Contact us</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="grid grid-cols-2">
+        <div class="bg-gradient-to-r from-purple-500 to-pink-500 col-span-1">
+            <h2 class="text-5xl text-center mt-[20%]">Era Song of Sounds</h2>
+            <p class="font-sans mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat ut quibusdam quasi consectetur ipsa, ea doloremque hic illum harum, aspernatur obcaecati? Dolorum eligendi nostrum inventore! Est at labore aliquam placeat, accusantium, molestias laboriosam iusto veritatis tempore nemo provident dignissimos.</p>
+        </div>
+        <div class="col-span-1">
+            <img src="./images/Screenshot (119).png" class="float-right h-[500px] w-full">
+        </div>
     </div>
-  </div>
-</nav>
 
-          <!-- Slider -->
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./Images/annapurna home.jpg" class="d-block w-100" alt="..." style="height: 490px">
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/khaano.jpg" class="d-block w-100" alt="..."  style="height: 490px">
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/outside.jpg" class="d-block w-100" alt="..."  style="height: 490px">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+    <!-- Second Section -->
 
-           <!-- About Section -->
+    <div class="h-[400px] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ...">
+    </div>
 
-         <div class="container-fluid p-3 p-lg-5 p-md-5 m-0">
-             <h1 class="s-font text-center mt-3 mb-4 overflow-hidden max-width" style="color: white;">About Annapurna</h1>
-             <p class="text-center fs-6 max-width mb-4" style="color: white;">Annapurna Hostel, Mathura is a boutique hostel with modern amenities
-                 and exemplary services, located about 250 meters from GLA University,Mathura. 
-                  built and elegantly furnished, it offers esteemed Students a blend of luxury and comfort.
-                 Annapurna Hostel provide Cozy and comfortable accommodation for a pleasant stay.</p>
-                 <p class="text-center fs-6 max-width mb-4" style="color: white;">We invite you to take a closer look and discover unmistakable hospitality in this hostel in Mathura that we call home.</p>
-         </div>  
-          
-      
-        <!-- Room Slider -->
+    <!-- Third section -->
 
-         <div class="container-fluid text-center max-width my-5" >
-        <div class="col m-auto">
-            <h1 class="s-font text-center  mb-4 overflow-hidden max-width" style="color: white;">Accomodation at Annapurna Hostel</h1>
-        </div>
-     
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./Images/room new.jpg" class="d-block w-100" alt="..." style="height: 550px">
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/room.jpg" class="d-block w-100" alt="..." style="height: 550px">
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/corridor 1.jpg" class="d-block w-100" alt="..." style="height: 550px">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        
-            <!-- Services -->
-        
-            <h1 class="s-font text-center mt-3 mb-4 overflow-hidden max-width mt-5" style="color: white;" id="services">Our Accommodation</h1>
-            <div class="container"></div>
-        <div class="row mt-5">
-            <div class="col-md-4"><h3 style="color: white;">Modern Amenities</h3>
-            <p style="color: white;">We believe that a seamless living experience goes hand in hand with modern amenities.
-                 With high-speed internet access, study areas, and recreational spaces, 
-                 we've got you covered for both work and play. Your safety and security are of utmost importance to us,
-                 and we maintain round-the-clock surveillance to ensure your peace of mind..</p>
-            </div>
-            <div class="col-md-4"><h3 style="color: white;">Homely Meals</h3>
-           <p style="color: white;">They say the way to a happy heart is through a happy stomach,
-             and we couldn't agree more! At Annapurna Hostel, we understand the significance 
-             of nutritious and wholesome meals in your daily life. Our in-house kitchen prepares 
-             a delectable assortment of dishes that cater to diverse tastes and dietary preferences. 
-             Enjoy home-cooked meals that not only satisfy your cravings
-             but also provide you with the energy to conquer the day's challenges</p>
-              </div>
-             <div class="col-md-4"><h3 style="color: white;">Community and Engagement</h3>
-            <p style="color: white;">Living away from family and friends can be daunting, but at Annapurna Hostel, 
-                you'll find a supportive and friendly community to lean on.
-                 From organized events and activities to common areas
-                  where you can socialize, our aim is to create an atmosphere that fosters connections
-                   and friendships. Our staff is dedicated to ensuring that you have all the support you need during
-                 your stay, making your experience at Annapurna truly memorable.</p>
-            </div>
-        </div>
-
-        <!-- Menu -->
-        <h1 class="s-font text-center mt-3 mb-4 overflow-hidden max-width mt-5" style="color: white;" id="services">Our Menu</h1>
-        <div class="container" id="Menu">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col" >Day</th>
-                    <th scope="col">Breakfast</th>
-                    <th scope="col">Lunch</th>
-                    <th scope="col">Dinner</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Monday</th>
-                    <td>Alu Parathaa</td>
-                    <td>Alu Matar+Chawal+Roti</td>
-                    <td>MixVeg+Roti+Salad</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Tuesday</th>
-                    <td>Paav Bhaji</td>
-                    <td>Kadi+Chawal+Roti</td>
-                    <td>Puri Sabji+Kheer+Salad</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Wednesday</th>
-                    <td>Khasta Kachori</td>
-                    <td>Aalu Bari+Chawal+Roti</td>
-                    <td>Chana Masala+Roti+Salad</td>
-                  </tr>
-                  <th scope="row">Thursday</th>
-                    <td>Sandwich</td>
-                    <td>Rajma+Chawal+Roti</td>
-                    <td>Matar Paneer+Roti+Salad</td>
-                </tr>
-                <th scope="row">Friday</th>
-                    <td>Bedai</td>
-                    <td>Chana Aalu+Chawal+Roti</td>
-                    <td>MixVeg+Roti+Salad</td>
-                </tr>
-                <th scope="row">Saturday</th>
-                    <td>Sada Parathe</td>
-                    <td>Kadi+Chawal+Roti</td>
-                    <td>Daal Makhani+Roti+Salad</td>
-                </tr>
-                <th scope="row">Sunday</th>
-                    <td>Chhole Bhature,</td>
-                    <td>Namkeen Chawal</td>
-                    <td>Aalu sabji+Roti+Salad+2 piece Gulabjamun</td>
-                </tr>
-                </tbody>
-              </table>
-        </div>
-        <h4 class="s-font text-center mt-3 mb-4 overflow-hidden max-width mt-5" style="color: white;" id="services">copyright © 2023 all rights reserved</h4>
-        <h4 class="s-font text-center mt-3 mb-4 overflow-hidden max-width mt-5" style="color: white;" id="services">This Website is Created by Siddhant & Abhishek</h4>
+    <div class="h-[400px] bg-pink-100 grid grid-cols-3 bg-gradient-to-r from-purple-400 from-20% via-pink-400 via-40% to-purple-600 to-80%">
+        <div class="col-span-1 shadow-2xl">Box 1</div>
+        <div class="col-span-1 shadow-2xl">Box 2</div>
+        <div class="col-span-1 shadow-2xl">Box 3</div>
+    </div>
 </body>
 </html>
